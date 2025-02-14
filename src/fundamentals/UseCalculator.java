@@ -2,7 +2,7 @@ package fundamentals;
 
 import access.modifiers.Calculator;
 
-public class UseCalculator {
+public class UseCalculator extends Calculator {
 
 	public static void main(String[] args) {
 		Calculator calc = new Calculator();
@@ -15,6 +15,12 @@ public class UseCalculator {
 															// it can be accessed when inheriting it
 
 //		System.out.println(calc.division(100, 200));  // private method can be access with in the class only
+		
+		
+		UseCalculator useCalc = new UseCalculator();
+		
+		useCalc.mulplication(100, 200);  // it can be accessed when inheriting it
+		
 
 	}
 
