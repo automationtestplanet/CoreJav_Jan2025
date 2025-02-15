@@ -2,14 +2,21 @@ package assignments.venkat;
 
 public class Assignment1 {
 
-	// write a reusable program to check whether the number is prime or not
-	// int num = 5;  o/p : prime
-	// int num = 6;  o/p : not prime;
-
-	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int num = 5; 
+       
+        if (isPrime(num)) {
+            System.out.println("prime");
+        } else {
+            System.out.println("not prime");
+        }
+    }
 
-	}
-
+    static boolean isPrime(int n) {
+        if (n <= 1) return false;
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) return false;
+        }
+        return true;
+    }
 }
