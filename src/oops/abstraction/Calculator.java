@@ -56,5 +56,9 @@ public interface Calculator {
 	 * @return int value
 	 */
 	public int modDivision(int a, int b);
+	
+	public static void main(String[] args) {
+//		Calculator calc = new Calculator();  // we can not create the object
+ 	}
 
 }
