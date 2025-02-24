@@ -7,12 +7,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class GenericCollectionEample {
+public class GenericCollectionExample {
 
 	public static void main(String[] args) {
 		List<Integer> arrayList = new ArrayList<Integer>();
 		arrayList.add(10);
-		//		arrayList.add(true);
+		// arrayList.add(true);
 		arrayList.add(100);
 //		arrayList.add('A');
 //		arrayList.add(10.5);
@@ -41,7 +41,7 @@ public class GenericCollectionEample {
 //		hashMap.put("Age", 30);
 
 		Set<Map.Entry<String, String>> entrySet = hashMap.entrySet(); // Entry is child interface of Map interface
-		
+
 		for (Map.Entry<String, String> eachEntry : entrySet) {
 			System.out.println(eachEntry.getKey());
 			System.out.println(eachEntry.getValue());
