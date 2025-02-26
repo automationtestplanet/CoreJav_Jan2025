@@ -7,7 +7,7 @@ public class ReadDataFromNotepadFile {
 
 	public static void main(String[] args) throws Exception {
 
-		File file1 = new File("C:\\Users\\RAJU CHELLE\\Desktop\\InputFile.txt");
+		File file1 = new File(System.getProperty("user.dir")+"\\Files\\InputFile.txt");
 		FileInputStream fis = new FileInputStream(file1);
 		System.out.println(fis.available());
 		byte[] byteArr = new byte[fis.available()];

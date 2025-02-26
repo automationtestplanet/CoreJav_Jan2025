@@ -8,7 +8,7 @@ import java.util.Properties;
 public class ReadDataFromPropertiesFIle {
 
 	public static void main(String[] args) throws Exception {
-		File file1 = new File("C:\\Users\\RAJU CHELLE\\Desktop\\TestData.properties");
+		File file1 = new File(System.getProperty("user.dir")+"\\Files\\TestData.properties");
 		FileInputStream fis = new FileInputStream(file1);
 		
 		Properties testDataProperties = new Properties();
